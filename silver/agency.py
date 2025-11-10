@@ -1,7 +1,7 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.agency")
+df = spark.table("sp_trans2.bronze.agency")
 display(df)
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.agency")
+df.write.mode("overwrite").saveAsTable("ssp_trans2.silver.agency")

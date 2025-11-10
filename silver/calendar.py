@@ -1,7 +1,7 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.calendar")
+df = spark.table("sp_trans2.bronze.calendar")
 display(df)
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.calendar")
+df.write.mode("overwrite").saveAsTable("sp_trans2.silver.calendar")

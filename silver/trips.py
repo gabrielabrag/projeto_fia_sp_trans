@@ -1,5 +1,5 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.trips")
+df = spark.table("sp_trans2.bronze.trips")
 
 # COMMAND ----------
 
@@ -35,4 +35,4 @@ display(df)
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.trips")
+df.write.mode("overwrite").saveAsTable("sp_trans2.silver.trips")

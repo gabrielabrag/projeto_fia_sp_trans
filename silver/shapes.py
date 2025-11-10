@@ -1,6 +1,6 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.shapes")
+df = spark.table("sp_trans2.bronze.shapes")
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.shapes")
+df.write.mode("overwrite").saveAsTable("sp_trans2.silver.shapes")

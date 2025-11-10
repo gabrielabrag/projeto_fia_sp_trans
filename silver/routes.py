@@ -1,5 +1,5 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.routes")
+df = spark.table("sp_trans2.bronze.routes")
 # display(df)
 
 # COMMAND ----------
@@ -32,4 +32,4 @@ for c, tipo in df.dtypes:
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.routes")
+df.write.mode("overwrite").saveAsTable("sp_trans2.silver.routes")

@@ -1,5 +1,5 @@
 # Databricks notebook source
-df = spark.table("sp_trans.raw.fare_rules")
+df = spark.table("sp_trans2.bronze.fare_rules")
 # display(df)
 
 # COMMAND ----------
@@ -28,4 +28,4 @@ for c in df.columns:
 
 # COMMAND ----------
 
-df.write.mode("overwrite").saveAsTable("sp_trans.trusted.fare_rules")
+df.write.mode("overwrite").saveAsTable("sp_trans2.silver.fare_rules")
