@@ -2,6 +2,9 @@
 
 📋 Visão Geral
 
+O projeto nos possibilita monitorar em tempo quase real a quantidade de veículos disponíveis em operação,na cidade de São Paulo, com foco inicial na região central.
+Pcoloque ermitindo análises estratégicas e intervenções operacionais na frota de ônibus.
+Com esses dados, é possível identificar desequilíbrios na distribuição dos veículos, detectar situações de superlotação e otimizar a alocação da frota de forma mais eficiente, melhorando a qualidade do serviço e a experiência dos passageiros.
 Este projeto tem como objetivo coletar, processar e disponibilizar dados da SPTrans (Olho Vivo API) em um ambiente Databricks.
 A arquitetura foi construída seguindo o modelo Lakehouse com as camadas Bronze, Silver e Gold, garantindo qualidade, segurança e confiabilidade dos dados.
 
@@ -48,10 +51,16 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 
 🕒 Workflows e Agendamentos
 
-Os pipelines são automatizados via Databricks Workflows (Jobs):
+| **Job**              | **Descrição**                                                 | **Frequência**        |
+|-----------------------|---------------------------------------------------------------|------------------------|
+| `api_posicao`         | Coleta a posição de todos os veículos em operação.            | ⏱️ A cada **2 minutos** |
+| `api_veiculos_ativos` | Calcula o número de veículos ativos por horário.              | ⏱️ A cada **15 minutos** |
+| `carga_fria`          | Escuta o volume; ao detectar atualização, dispara a ingestão. | ⚡ **Sob demanda**     |
+| `api_linhas`          | Atualiza a dimensão de linhas de ônibus.                      | 📅 **1 vez por mês**   |
 
-Job	Descrição	Frequência: 
-api_posicao	Coleta a posição de todos os veículos em operação	⏱️ a cada 2 minutos
-api_veiculos_ativos	Calcula o número de veículos ativos por horário	⏱️ a cada 15 minutos
-carga_fria	Ouve atualizações no volume e dispara ingestão automática	📦 sob demanda
-api_linhas	Atualiza a dimensão de linhas de ônibus da cidade	📅 1 vez por mês
+🚀 Próximos Passos / Melhorias
+
+🌎 Expansão do monitoramento para demais regiões da cidade de São Paulo.
+
+📊 Expandir dashboards para espelhar esses dadios near real time.
+
