@@ -1,9 +1,9 @@
 # Databricks notebook source
-df = spark.table("sp_trans2.bronze.stop_times")
+# display(df)
 
 # COMMAND ----------
 
-# display(df)
+df = spark.table("sp_trans2.bronze.stop_times")
 
 # COMMAND ----------
 
