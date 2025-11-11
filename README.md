@@ -61,7 +61,6 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 | **Job**              | **Descrição**                                                 | **Frequência**        |
 |-----------------------|---------------------------------------------------------------|------------------------|
 | `api_posicao`         | Coleta a posição de todos os veículos em operação.            | ⏱️ A cada **2 minutos** |
-| `api_veiculos_ativos` | Calcula o número de veículos ativos por horário.              | ⏱️ A cada **15 minutos** |
 | `carga_fria`          | Escuta o volume; ao detectar atualização, dispara a ingestão. | ⚡ **Sob demanda**     |
 | `api_linhas`          | Atualiza a dimensão de linhas de ônibus.                      | 📅 **1 vez por mês**   |
 
