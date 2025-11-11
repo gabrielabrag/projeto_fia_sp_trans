@@ -31,7 +31,8 @@ Bronze (Raw)	Dados brutos extraídos diretamente da API SPTrans e arquivos de ca
 Silver (Trusted)	Dados limpos, normalizados e com tipos tratados.
 Gold (Refined)	Dados analíticos prontos para dashboards e relatórios, integrados com o Power BI.
 
-<img width="663" height="211" alt="arclitetura drawio" src="https://github.com/user-attachments/assets/3e27996e-e040-45bc-968d-05b6e58fa2e5" />
+
+<img width="718" height="321" alt="image" src="https://github.com/user-attachments/assets/3ddd363c-338d-424a-9145-e3d7d08b7dac" />
 
 
 ---
@@ -73,7 +74,7 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 
 ##🚀 Próximos Passos / Melhorias
 
-🌎 Expansão do monitoramento para demais regiões da cidade de São Paulo.
-
-📊 Expandir dashboards para espelhar esses dadios near real time.
+Expansão do monitoramento para demais regiões da cidade de São Paulo.
+Expandir dashboards para espelhar esses dadios near real time.
+Melhorar a gestão de arquivos de carga fria, trazendo dados diretamente do storage e conectando com o volume, garantindo ingestão automatizada e mais confiável.
 
