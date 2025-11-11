@@ -72,7 +72,7 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 
 ---
 
-##🚀 Próximos Passos / Melhorias
+## 🚀 Próximos Passos / Melhorias
 
 Expansão do monitoramento para demais regiões da cidade de São Paulo.
 Expandir dashboards para espelhar esses dadios near real time.
