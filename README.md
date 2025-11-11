@@ -28,8 +28,11 @@ O projeto segue a arquitetura Medallion (Bronze → Silver → Gold):
 
 Camada	Descrição
 Bronze (Raw)	Dados brutos extraídos diretamente da API SPTrans e arquivos de carga fria.
-Silver (Trusted)	Dados limpos, normalizados e com tipos tratados (ex: data/hora, coordenadas, status).
+Silver (Trusted)	Dados limpos, normalizados e com tipos tratados.
 Gold (Refined)	Dados analíticos prontos para dashboards e relatórios, integrados com o Power BI.
+
+<img width="663" height="211" alt="arclitetura drawio" src="https://github.com/user-attachments/assets/3e27996e-e040-45bc-968d-05b6e58fa2e5" />
+
 
 ---
 
