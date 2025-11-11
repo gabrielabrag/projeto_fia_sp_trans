@@ -55,7 +55,9 @@ Nos notebooks, o token é acessado da seguinte forma:
 
 token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 
-🕒 Workflows e Agendamentos
+---
+
+##🕒 Workflows e Agendamentos
 
 | **Job**              | **Descrição**                                                 | **Frequência**        |
 |-----------------------|---------------------------------------------------------------|------------------------|
@@ -64,7 +66,9 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 | `carga_fria`          | Escuta o volume; ao detectar atualização, dispara a ingestão. | ⚡ **Sob demanda**     |
 | `api_linhas`          | Atualiza a dimensão de linhas de ônibus.                      | 📅 **1 vez por mês**   |
 
-🚀 Próximos Passos / Melhorias
+---
+
+##🚀 Próximos Passos / Melhorias
 
 🌎 Expansão do monitoramento para demais regiões da cidade de São Paulo.
 
