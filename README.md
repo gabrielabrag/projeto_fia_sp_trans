@@ -39,17 +39,13 @@ Gold (Refined)	Dados analíticos prontos para dashboards e relatórios, integrad
 
 ## 🧠 Tecnologias Utilizadas
 
+Git Integration (versionamento de notebooks GitHub)
 Databricks (PySpark / Workflows / Secret Scopes)
-
 API Olho Vivo (SPTrans)
-
 Power BI (visualização dos dados Gold)
-
 Python (requests, pandas, pyspark.sql)
-
 Delta Lake (armazenamento otimizado)
 
-Git Integration (versionamento de notebooks)
 ---
 
 ## 🔐 Segurança
