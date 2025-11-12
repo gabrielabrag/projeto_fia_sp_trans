@@ -27,7 +27,9 @@ O projeto segue a arquitetura Medallion (Bronze → Silver → Gold):
 
 Camada	Descrição
 Bronze (Raw)	Dados brutos extraídos diretamente da API SPTrans e arquivos de carga fria.
+
 Silver (Trusted)	Dados limpos, normalizados e com tipos tratados.
+
 Gold (Refined)	Dados analíticos prontos para dashboards e relatórios, integrados com o Power BI.
 
 
@@ -39,10 +41,15 @@ Gold (Refined)	Dados analíticos prontos para dashboards e relatórios, integrad
 ## 🧠 Tecnologias Utilizadas
 
 Git Integration (versionamento de notebooks GitHub)
+
 Databricks (PySpark / Workflows / Secret Scopes)
+
 API Olho Vivo (SPTrans)
+
 Power BI (visualização dos dados Gold)
+
 Python (requests, pandas, pyspark.sql)
+
 Delta Lake (armazenamento otimizado)
 
 ---
