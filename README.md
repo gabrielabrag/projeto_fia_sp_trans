@@ -69,6 +69,8 @@ token = dbutils.secrets.get(scope="sptrans_scope", key="api_token")
 ## 🚀 Próximos Passos / Melhorias
 
 Expansão do monitoramento para demais regiões da cidade de São Paulo.
+
 Expandir dashboards para espelhar esses dados near real time.
-Melhorar a gestão de arquivos de carga fria, trazendo dados diretamente do storage e conectando com o volume, garantindo ingestão automatizada e mais confiável.
+
+Melhorar a gestão de arquivos de carga fria, trazendo os dados diretamente do storage (ex.: SharePoint → Storage Account) e estabelecendo uma conexão externa com o Databricks, permitindo replicação automática dos arquivos no volume e garantindo uma ingestão mais confiável e integrada.
 
